@@ -26,7 +26,7 @@ Fill in the bots name, and username (must end with bot)
 The Botfather will reply with the bots API token  
 Take note of this Token as it is vital for the bots operation   
 ![Botfather New bot](/images/botfather_botcreation.png)
-Go back and start a chat with your bot  
+Go back and start a chat with your bot to initialize it    
 ### Notification setup
 Go to `https://api.telegram.org/bot$TOKEN/getUpdates`
 Where $ Token is the API key you received from Botfather
