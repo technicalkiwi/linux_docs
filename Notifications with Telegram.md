@@ -45,13 +45,13 @@ Check telegegram and you will have received a message in the chat from the bot.
 ## Server Setup
 
 Open the pam sshd config file
-`sudo nano /etc/pam.d/sshd`
+`sudo nano /etc/pam.d/sshd`  
 Add in the following line
 `session  optional  pam_exec.so /etc/pam.scripts/ssh_alerts.sh`
 
 Create the folder /etc/pam.scripts if need
-`sudo mkdir /etc/pam.scripts`
-Create the script to execite
+`sudo mkdir /etc/pam.scripts`  
+Create the script to execute
 `sudo nano /etc/pam.scripts/ssh_alert.sh`
   
 Configure and paste the below into ssh_alerts.sh
