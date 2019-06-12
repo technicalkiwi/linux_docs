@@ -1,12 +1,19 @@
 # Introduction
-.
+Server Notifications are an important part of any IT persons life.
+But to me email seemed so archaic so i wanted to see if i couldnt set up a more modern solution
+
+I came across a few people who were using various messaging services and wanted to have a look. 
+So I laid out some requirements
 
 ### Requirements
 - Push Notifications
 - Central Source for all Servers
 - Notification History
 - Accessible from Multiple Sources
--
+- Ease of Setip
+
+### Decision
+After looking at a variety of options including slack, and discord i settles on Telegram as it ticked all the boxes and looked very easy to work with.
 
 # Setup
 ## Telegram Setup
