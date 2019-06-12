@@ -28,11 +28,11 @@ Take note of this Token as it is vital for the bots operation
 ![Botfather New bot](/images/botfather_botcreation.png)
 Go back and start a chat with your bot to initialize it    
 ### Notification setup
-Go to `https://api.telegram.org/bot$TOKEN/getUpdates`
-Where $ Token is the API key you received from Botfather
-You should get something similar to the below
+Go to `https://api.telegram.org/bot$TOKEN/getUpdates`  
+Where `$Token` is the API key you received from Botfather  
+You should get something similar to the below  
 ![Telegram Get Update](images/telegram_bot_getupdate.png)
-Take note of the Chat ID, in this case 7654321
+Take note of the Chat ID, in this case 7654321  
 
 ### Sending Notifications
 Now you have the API token and chat ID
