@@ -17,16 +17,16 @@ After looking at a variety of options including slack, and discord i settles on 
 
 # Setup
 ## Telegram Setup
-Create Telegram account
-Login to new account
+Create Telegram account  
+Login to your new account on your chosen device.
 ### Bot setup
-Start chat with BotFather
-Create a new bot `/new bot`  
+Start chat with the BotFather  
+Create a new bot by typing `/new bot`  
 Fill in the bots name, and username (must end with bot)  
-The Botfather will reply with the bots API token,
-Take note of this as it is vital
+The Botfather will reply with the bots API token  
+Take note of this Token as it is vital for the bots operation   
 ![Botfather New bot](/images/botfather_botcreation.png)
-Go back and start a chat with your bot
+Go back and start a chat with your bot  
 ### Notification setup
 Go to `https://api.telegram.org/bot$TOKEN/getUpdates`
 Where $ Token is the API key you received from Botfather
