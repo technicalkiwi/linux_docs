@@ -21,9 +21,9 @@ Create Telegram account
 Login to new account
 ### Bot setup
 Start chat with BotFather
-Create a new bot `/new bot`
-Fill in the bots name, and username (must end with bot)
-The Botfather will reply with the bots API token
+Create a new bot `/new bot`  
+Fill in the bots name, and username (must end with bot)  
+The Botfather will reply with the bots API token,
 Take note of this as it is vital
 ![Botfather New bot](/images/botfather_botcreation.png)
 Go back and start a chat with your bot
