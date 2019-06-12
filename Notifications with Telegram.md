@@ -36,3 +36,42 @@ This will get the bot to send Hello Mate to your telegram account.
 Check telegegram and you will have received a message in the chat from the bot.
 
 ## Server Setup
+
+Open the pam sshd config file
+`sudo nano /etc/pam.d/sshd`
+Add in the following line
+`session  optional  pam_exec.so /etc/pam.scripts/ssh_alerts.sh`
+
+Create the folder /etc/pam.scripts if need
+`sudo mkdir /etc/pam.scripts`
+Create the script to execite
+`sudo nano /etc/pam.scripts/ssh_alert.sh`
+  
+Configure and paste the below into ssh_alerts.sh
+<pre>#!/bin/bash
+TOKEN="Enter API Token Here"
+CHATID="Enter Chat ID Here"
+URL="https://api.telegram.org/bot$TOKEN/sendMessage"
+SERVER="Enter Server Name Here"
+TIME="10"
+TEXT="
+A SSH login was successful, so here is some information for security:
+  	User:        $PAM_USER
+	Date:        `date`
+	Server:      $SERVER
+"
+if [ ${PAM_TYPE} = "open_session" ]; then
+	
+    curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT" $URL >/dev/null
+
+    fi
+exit 0 </pre>
+  
+Save and Exit the File.
+
+Test By logging into the server via SSH
+You should recieve an alert on telgram
+![SSH Telegram Alert](/images/ssh_telegram_alert.jpg)
+
+All Done
+You can also use this to alert about many other happpenings.
