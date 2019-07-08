@@ -12,8 +12,8 @@
 
 ###### Installing Certbot
 
-Install Python and Common Software
-`apt-get install software-properties-common python-software-properties`  
+Install Python and Common Software 
+`apt-get install software-properties-common`  
 Add in the Certbot Repository  
 `add-apt-repository ppa:certbot/certbot`  
 Update Apt Cache  
