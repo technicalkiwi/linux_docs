@@ -10,7 +10,7 @@
 
 ## Setup
 
-###### Installing Certbot
+##### Installing Certbot
 
 Install Python and Common Software 
 `apt-get install software-properties-common`  
@@ -21,10 +21,10 @@ Update Apt Cache
 Install Certbot  
 `apt-get install certbot python-certbot-nginx` 
 
-###### Generating Certificates  
+##### Generating Certificates  
 
 Generate your first certificate, this certifacte will work for all listed sites. 
-`sudo certbot --certonly --nginx --standalone -d example.com -d www.example.com`
+`sudo certbot certonly --nginx --standalone -d example.com -d www.example.com`
 
 When prompted, specify an administrative email address. This will allow you to regain control of a lost certificate and receive urgent security notices if necessary. 
 
