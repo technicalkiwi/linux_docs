@@ -1,4 +1,10 @@
-# Introduction
+# Setting up Login Notifications with Telegram
+
+### Index
+- [Introduction](#introduction)
+- 
+
+## Introduction
 Server Notifications are an important part of any IT persons life.
 But to me email seemed so archaic so i wanted to see if i couldnt set up a more modern solution
 
